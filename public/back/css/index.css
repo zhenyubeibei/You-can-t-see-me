@@ -99,7 +99,16 @@ body{
 .lt_main .breadcrumb a:hover{
     color:#23527c;
 }
-
+/* 面包屑导航 */
+.breadcrumb{
+  margin:10px 5px;
+}
+/* 表格 */
+.table > thead > tr > th,
+.table > tbody > tr > td{
+  text-align: center;
+  vertical-align: middle;
+}
 /* 数据可视化 */
 .lt_main .left,
 .lt_main .right{

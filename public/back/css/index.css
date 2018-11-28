@@ -92,6 +92,20 @@ body{
 /* 主体内容 */
 .lt_main{
   transition:1s;
+  padding-left:180px;
+  padding-top:50px;
+}
+.lt_main .breadcrumb a,
+.lt_main .breadcrumb a:hover{
+    color:#23527c;
+}
+
+/* 数据可视化 */
+.lt_main .left,
+.lt_main .right{
+  width: 48%;
+  height: 400px;
+  background-color: pink;
 }
 
 /* 模态框 */

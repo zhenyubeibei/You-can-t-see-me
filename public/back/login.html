@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.css">
+  <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
   <link rel="stylesheet" href="./css/commet.css">
 </head>
 
@@ -17,25 +18,34 @@
       <div class="panel-heading">
         <h3 class="panel-title">后台管理系统</h3>
       </div>
-      <form action="" id = "form">
-        <div class="panel-body">
-          <span class="col-xs-3">用户名:</span>
-          <div class="col-sm-9">
-          <input class="form-control" type="text" name="username" id="username" placeholder="请输入用户名">
+      <form action="" id="form">
+        <div class="form-group">
+          <div class="panel-body">
+            <span class="col-xs-3">用户名:</span>
+            <div class="col-sm-9">
+              <input class="form-control" type="text" name="username" id="username" placeholder="请输入用户名">
+            </div>
           </div>
         </div>
-        <div class="panel-body">
-          <span class="col-xs-3">密　码:</span>
-          <div class="col-sm-9">
-          <input class="form-control" type="password" name="password" id="password" placeholder="请输入用户名">
+        <div class="form-group">
+
+          <div class="panel-body">
+            <span class="col-xs-3">密　码:</span>
+            <div class="col-sm-9">
+              <input class="form-control" type="password" name="password" id="password" placeholder="请输入用户名">
+            </div>
           </div>
         </div>
-        <div class="panel-body">
-          <div class="btn-footer col-xs-offset-3 col-xs-6">
-            <button type="reset" class="reset btn btn-default btn-md active pull-left">重置</button>
-            <button type="submit" class="btn btn-primary btn-md active pull-right">登陆</button>
+        <div class="form-group">
+
+          <div class="panel-body">
+            <div class="btn-footer col-xs-offset-3 col-xs-6">
+              <button type="reset" class="reset btn btn-default btn-md active pull-left">重置</button>
+              <button type="submit" class="btn btn-primary btn-md active pull-right">登陆</button>
+            </div>
           </div>
         </div>
+
       </form>
     </div>
   </div>
@@ -44,6 +54,8 @@
   <script src="./lib/jquery/jquery.js"></script>
   <script src="./lib/bootstrap/js/bootstrap.js"></script>
   <script src="lib//bootstrap-validator/js/bootstrapValidator.js"></script>
+  <script src="lib/nprogress/nprogress.js"></script>
+  <script src = "js/commet.js"></script>
   <script src="./js/login.js"></script>
 </body>
 

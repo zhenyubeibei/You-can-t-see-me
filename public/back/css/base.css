@@ -1,0 +1,87 @@
+*{
+	padding:0;
+	margin:0;
+}
+ul{
+	list-style:none;
+}
+.clearfix:after{
+	content:" ";
+	clear:both;
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+.clear{
+	*zoom:1;
+}
+a{
+	color:#333;
+	text-decoration:none;
+}
+a:hover{
+	color:#333;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+
+img,button,input {
+    border: 0;
+}
+/*版心公共类*/
+.w1140{
+	width:1140px;
+	margin:0 auto;
+}
+ /*超过部分以省略号形式显示*/
+.text-cut {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/*去掉文本域的自动缩放功能*/
+.textarea{
+    resize:none;
+}
+.ml-5 {
+    margin-left: 5px;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.pl-5 {
+    padding-left: 5px;
+}
+.pr-5 {
+    padding-right: 5px;
+}
+.pt-5 {
+    padding-top: 5px;
+}
+.pd-5 {
+    padding-bottom: 5px;
+}
+/*主色调*/
+.m-color {
+    color: #c81623;
+}
+/* 隐藏 */
+.lt_aside.hidemenu{
+	left:-180px;
+}
+.lt_header.hidemenu{
+	padding-left: 0;
+}
+.lt_main.hidemenu{
+	padding-left: 0;
+}

@@ -1,0 +1,100 @@
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color:#fff;
+}
+html,
+body{
+  height: 100%;
+}
+.lt_aside{
+  width: 180px;
+  height: 100%;
+  background-color: #222d32;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index:999;
+  transition:1s;
+}
+.lt_aside .header{
+  color:#fff;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 25px;
+  background-color: rgba(54, 127, 169);
+}
+.lt_aside .img{
+  margin:30px 0;
+  text-align: center;
+}
+.lt_aside .img span{
+  color:#fff;
+  font-size: 22px;
+  height: 40px;
+  line-height: 40px;
+}
+.lt_aside img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.lt_aside .nav a{
+  display: block;
+  width: 180px;
+  height: 40px;
+  padding-left:40px;
+  line-height: 40px;
+  border-left: 3px solid transparent;
+  box-sizing: border-box;
+}
+.lt_aside .nav a.active{
+  background-color: #1d1f21;
+  border-left: 3px solid #006699;
+}
+.lt_aside .nav a i{
+
+  margin-right:5px;
+}
+
+.lt_aside .nav .child{
+  /* padding-left: 20px; */
+  box-sizing: border-box;
+}
+
+/* 头部 */
+.lt_header{
+  height: 50px;
+  width: 100%;
+  padding-left:180px;
+  background-color: #3c8dbc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  transition:1s;
+}
+.lt_header a{
+  width: 50px;
+  height: 50px; 
+  text-align: center;
+  line-height: 50px;
+}
+.lt_header a i{
+  font-size: 20px;
+}
+
+/* 主体内容 */
+.lt_main{
+  transition:1s;
+}
+
+/* 模态框 */
+.modal .modal-body{
+  color: red;
+}

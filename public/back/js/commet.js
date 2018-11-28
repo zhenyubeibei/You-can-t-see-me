@@ -19,7 +19,7 @@ if(location.href.indexOf("login.html") === -1){
     url:'/employee/checkRootLogin',
     success:function(info){
       if(info.success){
-        console.log(登录了)
+        console.log('登录了')
       }
       if(info.error === 400){
         //拦截登录
@@ -28,3 +28,45 @@ if(location.href.indexOf("login.html") === -1){
     }
   })
 }
+
+$(function(){
+// 3.点击mean按钮，使侧边栏退回去
+
+  $('.mean_left').click(function(){
+    console.log(1111)
+    $('.lt_aside').toggleClass('hidemenu')
+    $('.lt_header').toggleClass('hidemenu')
+    $('.lt_main').toggleClass('hidemenu')
+  })
+
+
+  //4.切换一二级导航
+  $('.second_a').click(function(){
+    $(this).next().stop().slideToggle();
+  })
+
+  //5调用模态框
+  $('.back').click(function(){
+    $('#myModal').modal("show")
+  })
+  //注册ajax事件
+  $('#logoutBtn').click(function(){
+    console.log(123)
+  $.ajax({
+    url:'/employee/employeeLogout',
+    type:'get',
+    dataType:'json',
+    success:function(info){
+
+      if(info.success){
+        location.href = "login.html"
+      }
+      if(info.error){
+        alert('未知错误404')
+      }
+    }
+  })
+})
+
+
+})

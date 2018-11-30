@@ -121,3 +121,10 @@ body{
 .modal .modal-body{
   color: red;
 }
+.lt_main{
+  margin-right: 20px;
+}
+.lt_main .add{
+  margin-top: 10px;
+  margin-bottom:20px;
+}

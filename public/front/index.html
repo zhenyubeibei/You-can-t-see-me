@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable = no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>乐淘云购</title>
   <link rel="icon" href="./favicon.ico">
-  <link rel="stylesheet" href="./lib/">
+  <link rel="stylesheet" href="./lib/mui/css/mui.css">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/common.css">
 </head>
+
 <body>
   <div class="lt_container">
-    <div class="lt_header"></div>
-    <div class="lt_main"></div>
-    <div class="lt_footer"></div>
+    <div class="lt_header">
+      <div class="left">
+        <i class="fa fa-home"></i>
+      </div>
+      <div class="text">
+        <span>乐淘云购</span>
+      </div>
+      <div class="right">
+        <i class="fa fa-search"></i>
+      </div>
+    </div>
+    <div class="lt_main">
+      <div class="mui-slider">
+        <div class="mui-slider-group mui-slider-loop">
+          <!--支持循环，需要重复图片节点-->
+          <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner6.png" /></a></div>
+          <div class="mui-slider-item"><a href="#"><img src="./images/banner1.png" /></a></div>
+          <div class="mui-slider-item"><a href="#"><img src="./images/banner2.png" /></a></div>
+          <div class="mui-slider-item"><a href="#"><img src="./images/banner3.png" /></a></div>
+          <div class="mui-slider-item"><a href="#"><img src="./images/banner4.png" /></a></div>
+          <div class="mui-slider-item"><a href="#"><img src="./images/banner5.png" /></a></div>
+          <div class="mui-slider-item"><a href="#"><img src="./images/banner6.png" /></a></div>
+          <!--支持循环，需要重复图片节点-->
+          <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner1.png" /></a></div>
+        </div>
+        <div class="mui-slider-indicator">
+          <div class="mui-indicator mui-active"></div>
+          <div class="mui-indicator"></div>
+          <div class="mui-indicator"></div>
+          <div class="mui-indicator"></div>
+          <div class="mui-indicator"></div>
+          <div class="mui-indicator"></div>
+        </div>
+      </div>
+    </div>
+    <div class="lt_footer">
+      <ul>
+        <li><a href="#"><i class="fa fa-home"></i>
+            <p>首页</p>
+          </a></li>
+        <li><a href="#"><i class="fa fa-bars"></i>
+            <p>分类页</p>
+          </a></li>
+        <li><a href="#"><i class="fa fa-shopping-cart"></i>
+            <p>购物车</p>
+          </a></li>
+        <li><a href="#"><i class="fa fa-user"></i>
+            <p>用户中心</p>
+          </a></li>
+      </ul>
+    </div>
   </div>
 
   <script src="./lib/mui/js/mui.js"></script>
   <script src="./js/common.js"></script>
 </body>
+
 </html>

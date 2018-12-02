@@ -63,7 +63,8 @@ $(function () {
     //赋值给按钮
     $('#dropdownText').text(txt);
     //获取id
-    var id = $(this).data(id)
+    var id = $(this).data("id")
+
     //把获取的id通过隐藏域上传
     $('[name = "categoryId"]').val(id)
       // 调用updateStatus更新 隐藏域 校验状态成 VALID
@@ -133,20 +134,27 @@ $(function () {
     }
   })
 
-  //5.添加二级分类  通过ajax  注册表单验证成功事件，阻止表单默认提交
+  //6.添加二级分类  通过ajax  注册表单验证成功事件，阻止表单默认提交
   $('#form').on('success.form.bv',function(e){
     e.preventDefault();
-
     $.ajax({
       url:'/category/addSecondCategory',
       type:'post',
       dataType:'json',
       data:$('#form').serialize(),
       success:function(info){
+          console.log(123123)
         console.log(info)
-        //取消模态框
+        //取消模态框 
         $('#secondModal').modal('hide')
-
+        //重新渲染页面 重新渲染第一页
+        currentPage:1
+        render()
+        //重置表单内容和状态
+        $('#form').data('bootstrapValidator').resetForm(true)
+        //下拉框的文字内容和图片img不是表单内容，需要手动更改
+        $('#dropdownText').text('请选择一级分类');
+        $('.dropimg').attr('src', 'images/none.png')
       }
     })
   })
